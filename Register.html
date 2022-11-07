@@ -9,19 +9,19 @@
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="./Register.css">
 
-       <!-- favicon link here  -->
-       <link rel="shortcut icon" href="./images/mask-wali.jpg" type="image/x-icon">
+    <!-- favicon link here  -->
+    <link rel="shortcut icon" href="./images/mask-wali.jpg" type="image/x-icon">
     <title>WeCare-Register</title>
-    
+
 </head>
 
 <body>
-    <form method="post" action="./backend.php">
+    <form method="post" action="../php/register_valid.php">
         <h3 style="font-family:monospace;">Please Fill Up The Register Form <br> <br> </h3>
         <p id="aaa">
             I Am <br>
-            <label for="doctor"><input type="radio" name="mediname" id="doctor">DOCTOR</label>
-            <label for="patient"><input type="radio" name="mediname" id="patient">PATIENT</label>
+            <label for="doctor"><input type="radio" name="mediname" id="doctor" value="doctor">DOCTOR</label>
+            <label for="patient"><input type="radio" name="mediname" id="patient" value="patient">PATIENT</label>
         </p>
         <p>
             <input type="name" name="fname" id="fname" placeholder="First Name " required>
@@ -45,16 +45,16 @@
             <label for="other"><input type="radio" name="gender" id="other">Other</label>
         </p>
         <p>
-            <input type="email" name="useremail" id="useremail" placeholder="UserName" required>
+            <input type="text" name="username" id="Username" placeholder="UserName" required>
         </p>
         <p>
             <input type="password" name="userpassword" id="userpassword" placeholder="Password" required>
         </p>
         <p>
-            <input type="password" name="userpassword" id="userpassword" placeholder="Re-Enter Password" required>
+            <input type="password" name="repassword" id="userpassword" placeholder="Re-Enter Password" required>
         </p>
         <p>
-            <input type="submit" value="Submit Now">
+            <input name="submit" type="submit" value="Submit Now">
         </p>
     </form>
 </body>
